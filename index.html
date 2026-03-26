@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drug Info Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Drug Info Finder</h1>
+    <p class="subtitle">Search for real FDA-approved drug information</p>
+
+    <div class="search-box">
+      <input type="text" id="drugInput" placeholder="e.g. aspirin, ibuprofen, metformin" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="history-section" class="history-section hidden">
+      <span class="history-label">Recent:</span>
+      <div id="history-tags"></div>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+    <div id="loader" class="loader hidden">Searching...</div>
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
